@@ -1,0 +1,14 @@
+# Ignore system files
+.DS_Store
+*.log
+*.pages
+*.webp
+*.avif
+*.jpeg
+*.jpg
+*.png
+*.zip
+
+# Ignore everything else outside the repo
+../
+../../
