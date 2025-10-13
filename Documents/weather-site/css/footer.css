@@ -1,0 +1,83 @@
+/* === FOOTER STYLES (OCEAN GREEN THEME) === */
+.footer {
+    background-color: #006d5b;  /* ocean green base */
+    color: #ffffff;
+    padding: 40px 0 20px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.footer h4 {
+    color: #e0fff5;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.footer .list-footer-item {
+    margin-bottom: 8px;
+}
+
+.footer .list-footer-item a {
+    color: #c9f0e6;  /* light mint link */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer .list-footer-item a:hover {
+    color: #00ffd5;  /* glowing ocean hover */
+    text-decoration: underline;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Column sizing */
+.footer .col-md-2,
+.footer .col-md-3,
+.footer .col-md-4 {
+    flex: 1;
+    min-width: 220px;
+}
+
+.copyRight {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* soft separator line */
+}
+
+
+.copyRight h6 {
+    color: #a8e0d2;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer h4 {
+        margin-top: 20px;
+    }
+}
