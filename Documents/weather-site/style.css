@@ -1,0 +1,64 @@
+body{
+ font-family: sans-serif; 
+ background-image: url(assests/Depositphotos_35050965_original.jpg);  
+ background-size: cover;
+ color: #fff;
+}
+
+
+.Weather-container{
+width: 80%;
+margin: 20px auto;
+padding: 20px;
+background-color: rgba(0,0,0, 0.5);
+border-radius: 10px;
+}
+
+h1 {
+display:inline-block;
+}
+
+.favourite-btn{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.current-weather{
+    margin: 20px 0;
+}
+
+.temperature{
+    font-size: 24px;
+    font-weight: bold;
+}
+forecast{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.forecast-day{
+    background-color: rgba(255, 255,255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.todays-conditions{
+    margin: 20px 0;
+    background-color: rgba(255,255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.view-forecast-btn{
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+}
