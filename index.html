@@ -65,7 +65,7 @@ body {
 /* 3. Main Navigation Bar */
 /* ---------------------------------- */
 .main-nav {
-    background-color: #008080; /* Ocean green as seen in the image */
+    background-color:#0000A0; /* Blue as seen in the image */
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -91,9 +91,27 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #FFFFFF; /* white on hover */
-    color: #000000; /* black color */
+    background-color: #0000A0; /* Blue on hover */
+    color: #008000; /* black color */
+    font-size: large;
 }
+/* City Search Bar */
+        contentHeader button.icon {
+    position: absolute;
+    top: 7px;
+    right: 3%;
+    z-index: 1;
+    border: none;
+    background: none;
+    color: rgba(251, 185, 1, 0.8);
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
     </style>
     <header class="weather-header">
         
@@ -109,8 +127,17 @@ body {
                 </div>
             </div>
         </div>
-      
+      <div class="col-md-12 text-center" style="display:block; height: auto; padding: 10px 0px; margin: 0px 0px 10px 0px; background-color:darkgoldenrod; color: #000; font-weight: bolder">
+    <marquee direction="left">
+        <a href="https://www.dffe.gov.za/g20ecswg" target="_blank" style="text-decoration: none;">
+
+            <strong style="padding-right:750px;color:black">Monitoring Weather, Safeguarding Our Air: Championing Climate Action at the G20 Summit Learn How We’re Making a Difference   <l style="color:black; background-color:greenyellow"> Click Here </l> </strong>
+           
+        </a>
+    </marquee>
+</div>
         <nav class="main-nav">
+            
             <div class="nav-container">
                 <a href="#" class="nav-link">About</a>
                 <a href="#" class="nav-link">Weather</a>
@@ -124,7 +151,18 @@ body {
                 <a href="#" class="nav-link">Contact</a>
             </div>
         </nav>
+<div class="col-md-8"></div>
+<form class="search-form cmxform" id="formal" role="search" action="/" method="post"></form>
+<div class="box"></div>
+<div class="container-1"></div>
+<div class="city-search-bar">
+        <input type="text" id="search" class="customPlaceholder" required="" minlength="3" placeholder="Enter a town or city near you..." name="city" autocomplete="off"> 
+        <button class="icon" id="submitsearch" type="submit"><i class="fa fa-search fa-2x"></i></button>
+        <div class="error"></div>
+        <div class="searchFunc" style="height: 285px;background:rgb(255, 255, 255);overflow-x: hidden; display: none;"></div>
 
+    </div>
+            
     </header>
 
    
